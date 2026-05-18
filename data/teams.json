@@ -1,0 +1,422 @@
+[
+  {
+    "id": 4608,
+    "name": "Natus Vincere",
+    "country": "UA",
+    "ranking": 1,
+    "players": [
+      7998,
+      18987,
+      16930,
+      20781,
+      11271
+    ],
+    "tier": 1
+  },
+  {
+    "id": 9565,
+    "name": "Team Vitality",
+    "country": "FR",
+    "ranking": 2,
+    "players": [
+      11893,
+      7322,
+      16820,
+      15246,
+      17108
+    ],
+    "tier": 1
+  },
+  {
+    "id": 6667,
+    "name": "FaZe Clan",
+    "country": "EU",
+    "ranking": 3,
+    "players": [
+      11816,
+      8183,
+      13666,
+      18053,
+      429
+    ],
+    "tier": 1
+  },
+  {
+    "id": 5995,
+    "name": "G2 Esports",
+    "country": "EU",
+    "ranking": 4,
+    "players": [
+      3741,
+      2757,
+      20127,
+      8738,
+      2593
+    ],
+    "tier": 1
+  },
+  {
+    "id": 7020,
+    "name": "Team Spirit",
+    "country": "RU",
+    "ranking": 5,
+    "players": [
+      21578,
+      16920,
+      22710,
+      18990,
+      13068
+    ],
+    "tier": 1
+  },
+  {
+    "id": 7175,
+    "name": "Heroic",
+    "country": "DK",
+    "ranking": 6,
+    "players": [
+      14329,
+      18456,
+      19156,
+      20950,
+      16710
+    ],
+    "tier": 1
+  },
+  {
+    "id": 4494,
+    "name": "MOUZ",
+    "country": "EU",
+    "ranking": 7,
+    "players": [
+      19208,
+      21439,
+      20478,
+      20185,
+      15466
+    ],
+    "tier": 1
+  },
+  {
+    "id": 5973,
+    "name": "Liquid",
+    "country": "US",
+    "ranking": 8,
+    "players": [
+      8520,
+      7551,
+      14720,
+      21200,
+      13915
+    ],
+    "tier": 1
+  },
+  {
+    "id": 5005,
+    "name": "Complexity",
+    "country": "US",
+    "ranking": 9,
+    "players": [
+      16891,
+      16134,
+      13247,
+      15086,
+      18472
+    ],
+    "tier": 1
+  },
+  {
+    "id": 11251,
+    "name": "Eternal Fire",
+    "country": "TR",
+    "ranking": 10,
+    "players": [
+      9960,
+      7938,
+      9264,
+      5765,
+      21300
+    ],
+    "tier": 1
+  },
+  {
+    "id": 6665,
+    "name": "Astralis",
+    "country": "DK",
+    "ranking": 11,
+    "players": [
+      7592,
+      7412,
+      4954,
+      11818,
+      19845
+    ],
+    "tier": 2
+  },
+  {
+    "id": 4869,
+    "name": "ENCE",
+    "country": "FI",
+    "ranking": 12,
+    "players": [
+      22150,
+      16816,
+      14963,
+      18978,
+      18023
+    ],
+    "tier": 2
+  },
+  {
+    "id": 5752,
+    "name": "Cloud9",
+    "country": "EU",
+    "ranking": 13,
+    "players": [
+      18898,
+      11670,
+      2127,
+      16947,
+      8918
+    ],
+    "tier": 2
+  },
+  {
+    "id": 10567,
+    "name": "SAW",
+    "country": "PT",
+    "ranking": 14,
+    "players": [
+      7178,
+      8905,
+      20456,
+      18020,
+      21789
+    ],
+    "tier": 2
+  },
+  {
+    "id": 11585,
+    "name": "TheMongolz",
+    "country": "MN",
+    "ranking": 15,
+    "players": [
+      17297,
+      19483,
+      22410,
+      21956,
+      20890
+    ],
+    "tier": 2
+  },
+  {
+    "id": 5378,
+    "name": "Virtus.pro",
+    "country": "RU",
+    "ranking": 16,
+    "players": [
+      21340,
+      15760,
+      18457,
+      13218,
+      14990
+    ],
+    "tier": 2
+  },
+  {
+    "id": 7532,
+    "name": "BIG",
+    "country": "DE",
+    "ranking": 17,
+    "players": [
+      5794,
+      16211,
+      20645,
+      21034,
+      22890
+    ],
+    "tier": 2
+  },
+  {
+    "id": 4773,
+    "name": "paiN Gaming",
+    "country": "BR",
+    "ranking": 18,
+    "players": [
+      19445,
+      21834,
+      18610,
+      21710,
+      22001
+    ],
+    "tier": 2
+  },
+  {
+    "id": 8297,
+    "name": "FURIA",
+    "country": "BR",
+    "ranking": 19,
+    "players": [
+      2023,
+      12552,
+      15631,
+      15104,
+      19345
+    ],
+    "tier": 2
+  },
+  {
+    "id": 4501,
+    "name": "3DMAX",
+    "country": "FR",
+    "ranking": 20,
+    "players": [
+      21470,
+      15481,
+      12580,
+      14760,
+      15342
+    ],
+    "tier": 2
+  },
+  {
+    "id": 9928,
+    "name": "GamerLegion",
+    "country": "EU",
+    "ranking": 21,
+    "players": [
+      22340,
+      17553,
+      20600,
+      15090,
+      22670
+    ],
+    "tier": 2
+  },
+  {
+    "id": 12080,
+    "name": "Falcons",
+    "country": "SA",
+    "ranking": 22,
+    "players": [
+      9032,
+      7398,
+      20315,
+      16910,
+      14529
+    ],
+    "tier": 2
+  },
+  {
+    "id": 9215,
+    "name": "MIBR",
+    "country": "BR",
+    "ranking": 23,
+    "players": [
+      18930,
+      16300,
+      22560,
+      19830,
+      21780
+    ],
+    "tier": 2
+  },
+  {
+    "id": 11345,
+    "name": "Wildcard",
+    "country": "AU",
+    "ranking": 24,
+    "players": [
+      16234,
+      13587,
+      11356,
+      18995,
+      22895
+    ],
+    "tier": 2
+  },
+  {
+    "id": 10894,
+    "name": "9z",
+    "country": "AR",
+    "ranking": 25,
+    "players": [
+      20567,
+      21234,
+      19876,
+      22345,
+      20895
+    ],
+    "tier": 2
+  },
+  {
+    "id": 10396,
+    "name": "Lynn Vision",
+    "country": "CN",
+    "ranking": 26,
+    "players": [
+      19456,
+      22120,
+      21950,
+      20834,
+      22565
+    ],
+    "tier": 2
+  },
+  {
+    "id": 4411,
+    "name": "Ninjas in Pyjamas",
+    "country": "SE",
+    "ranking": 27,
+    "players": [
+      8574,
+      14140,
+      15666,
+      16903,
+      21560
+    ],
+    "tier": 2
+  },
+  {
+    "id": 11518,
+    "name": "BetBoom",
+    "country": "RU",
+    "ranking": 28,
+    "players": [
+      17077,
+      15260,
+      20234,
+      22155,
+      15994
+    ],
+    "tier": 2
+  },
+  {
+    "id": 9455,
+    "name": "Imperial",
+    "country": "BR",
+    "ranking": 29,
+    "players": [
+      2633,
+      8611,
+      20897,
+      21400,
+      22899
+    ],
+    "tier": 2
+  },
+  {
+    "id": 11811,
+    "name": "Monte",
+    "country": "UA",
+    "ranking": 30,
+    "players": [
+      13997,
+      18345,
+      17650,
+      15892,
+      16190
+    ],
+    "tier": 2
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "playerId": 3741,
+    "contractEnd": "2026-12-31",
+    "buyout": 800000,
+    "salary": 35000,
+    "notes": "Long-standing G2 contract. High buyout per reports.",
+    "source": "Community estimates based on journalism",
+    "confidence": "estimated"
+  },
+  {
+    "playerId": 7592,
+    "contractEnd": "2026-06-30",
+    "buyout": 500000,
+    "salary": 30000,
+    "notes": "Astralis return contract. Shorter deal after NIP stint.",
+    "source": "Esports journalism",
+    "confidence": "estimated"
+  },
+  {
+    "playerId": 7998,
+    "contractEnd": "2027-12-31",
+    "buyout": 1500000,
+    "salary": 50000,
+    "notes": "One of the highest-paid CS players. Long-term NAVI deal.",
+    "source": "Multiple esports journalism reports",
+    "confidence": "rumored"
+  },
+  {
+    "playerId": 11893,
+    "contractEnd": "2027-06-30",
+    "buyout": 1200000,
+    "salary": 45000,
+    "notes": "Extended with Vitality after back-to-back Major wins.",
+    "source": "Vitality announcement + journalism estimates",
+    "confidence": "rumored"
+  },
+  {
+    "playerId": 21578,
+    "contractEnd": "2028-01-01",
+    "buyout": 2000000,
+    "salary": 30000,
+    "notes": "Young prodigy signed long-term. Reportedly highest buyout in CS.",
+    "source": "Spirit org statements + community estimates",
+    "confidence": "rumored"
+  }
+]

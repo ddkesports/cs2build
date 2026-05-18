@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Dashboard">
+  <div class="space-y-8">
+    <section>
+      <h1 class="text-3xl font-bold mb-2">CS2 Build</h1>
+      <p class="text-text-secondary text-lg">
+        Evaluate T1/T2 CS2 professionals, track contracts, and optimize your dream roster within budget.
+      </p>
+    </section>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <a
+        href="/board"
+        class="block bg-bg-secondary border border-border rounded-lg p-6 no-underline hover:border-accent transition-colors"
+      >
+        <h2 class="text-xl font-semibold text-text-primary mb-2">Big Board</h2>
+        <p class="text-text-secondary text-sm">
+          Sortable and filterable table of all T1/T2 players with stats, contract info, and role data.
+        </p>
+      </a>
+
+      <a
+        href="/builder"
+        class="block bg-bg-secondary border border-border rounded-lg p-6 no-underline hover:border-accent transition-colors"
+      >
+        <h2 class="text-xl font-semibold text-text-primary mb-2">Team Builder</h2>
+        <p class="text-text-secondary text-sm">
+          Build a 5-man roster by role, set a budget, and let the optimizer find the best team within your constraints.
+        </p>
+      </a>
+    </div>
+
+    <section class="bg-bg-secondary border border-border rounded-lg p-6">
+      <h2 class="text-lg font-semibold mb-3">Quick Stats</h2>
+      <p class="text-text-secondary text-sm">
+        Player data and stats will appear here once the HLTV scraper populates the data files.
+      </p>
+    </section>
+  </div>
+</Layout>

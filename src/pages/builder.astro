@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TeamBuilder from '../components/TeamBuilder';
+import { mergePlayerData } from '../lib/merge-data';
+import type { Contract } from '../types';
+
+import rawPlayers from '../../data/players.json';
+import rawContracts from '../../data/contracts.json';
+
+const players = mergePlayerData(rawPlayers as any[], rawContracts as Contract[]);
+---
+
+<Layout title="Team Builder">
+  <div class="space-y-6">
+    <div>
+      <h1 class="text-3xl font-bold mb-2">Team Builder</h1>
+      <p class="text-text-secondary">
+        Build your dream 5-man CS2 roster by role and optimize within a budget.
+      </p>
+    </div>
+
+    <TeamBuilder client:load players={players} />
+  </div>
+</Layout>

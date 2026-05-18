@@ -1,0 +1,63 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const currentPath = Astro.url.pathname;
+
+const navLinks = [
+  { href: '/', label: 'Dashboard' },
+  { href: '/board', label: 'Big Board' },
+  { href: '/builder', label: 'Team Builder' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | CS2 Build</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header class="bg-bg-secondary border-b border-border px-6 py-4">
+      <nav class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="/" class="text-xl font-bold text-accent no-underline hover:no-underline">
+          CS2 Build
+        </a>
+        <ul class="flex gap-6 list-none m-0 p-0">
+          {navLinks.map(({ href, label }) => (
+            <li>
+              <a
+                href={href}
+                class:list={[
+                  'text-sm font-medium no-underline transition-colors',
+                  currentPath === href
+                    ? 'text-accent'
+                    : 'text-text-secondary hover:text-text-primary',
+                ]}
+              >
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-1 max-w-7xl mx-auto w-full px-6 py-8">
+      <slot />
+    </main>
+
+    <footer class="bg-bg-secondary border-t border-border px-6 py-4">
+      <div class="max-w-7xl mx-auto text-center text-text-secondary text-sm">
+        CS2 Build -- Personal roster analysis tool
+      </div>
+    </footer>
+  </body>
+</html>

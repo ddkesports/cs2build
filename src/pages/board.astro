@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BigBoard from '../components/BigBoard';
+import { mergePlayerData } from '../lib/merge-data';
+import type { Contract } from '../types';
+
+// Load player and contract data from JSON files.
+// These files are populated by the HLTV scraper (scripts/scrape-hltv.ts)
+// and manually maintained (data/contracts.json).
+let rawPlayers: any[] = [];
+let rawContracts: Contract[] = [];
+
+try {
+  const playersModule = await import('../../data/players.json');
+  rawPlayers = playersModule.default ?? playersModule;
+} catch {
+  // No player data yet -- BigBoard handles empty gracefully
+}
+
+try {
+  const contractsModule = await import('../../data/contracts.json');
+  rawContracts = contractsModule.default ?? contractsModule;
+} catch {
+  // No contract data yet -- optional
+}
+
+const players = mergePlayerData(rawPlayers, rawContracts);
+---
+
+<Layout title="Player Big Board">
+  <div class="space-y-4">
+    <div>
+      <h1 class="text-3xl font-bold mb-2">Player Big Board</h1>
+      <p class="text-text-secondary">
+        All T1/T2 CS2 players ranked and filterable by stats, role, team, and contract status.
+      </p>
+    </div>
+
+    <BigBoard players={players} client:load />
+  </div>
+</Layout>
