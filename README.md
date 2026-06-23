@@ -1,43 +1,49 @@
-# Astro Starter Kit: Minimal
+# CS2 Build
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
+Static Astro + React MVP for evaluating Counter-Strike 2 players and building a
+five-role roster under a budget constraint.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Current State
 
-## 🚀 Project Structure
+- Dashboard at `/` linking to the two tool surfaces.
+- Big Board at `/board`: sortable and filterable player table.
+- Team Builder at `/builder`: five role slots, player picker, budget controls,
+  scoring weights, and an auto-build optimizer.
+- Data is version-controlled JSON under `data/`.
+- The HLTV scraper has a mock mode for generating development data.
 
-Inside of your Astro project, you'll see the following folders and files:
+The MVP is complete and currently parked. Refresh data and contract-source
+confidence before any public or decision-grade use.
+
+## Commands
+
+Run from this repo:
+
+| Command | Action |
+| --- | --- |
+| `bun install` | Install dependencies |
+| `bun run dev` | Start local dev server |
+| `bun run build` | Build the static site to `dist/` |
+| `bun run preview` | Preview the production build locally |
+| `bun run astro -- --help` | Astro CLI help |
+
+## Project Structure
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+data/
+  players.json      HLTV-derived or mock player records
+  teams.json        team metadata
+  contracts.json    manually maintained contract estimates
+scripts/
+  scrape-hltv.ts    scraper/mock data generator
+src/
+  components/       BigBoard, TeamBuilder, RosterCard
+  lib/              merge-data and optimizer logic
+  pages/            dashboard, board, builder
+  types/            shared player, contract, roster types
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Runtime Model
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This is a static site. JSON data is imported at build time; there is no backend,
+database, authentication, or scheduled scraping in the MVP.
